@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Platform</title>
+    <link rel="stylesheet" href="ecomstyle.css">
+</head>
+<header>
+
+    <img id="logo" src="ImgElements/logo.png" alt="logo">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    
+    <section id="home">
+        <h2>Welcome to No.Name</h2>
+        <p>Your one-stop shop for amazing products.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="ImgElements/watch.png" alt="watch">
+                <div class="description">
+                    <h3>watch</h3>
+                    <p>Rs.654.00</p>
+                    <button onclick="addToCart('watch', 654.00)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="ImgElements/vase.png" alt="Vase">
+                <div class="description">
+                    <h3> Vase</h3>
+                    <p>Rs.2000.00</p>
+                    <button onclick="addToCart('Vase', 2000.00)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="ImgElements/football.jpeg" alt="Football">
+                    <div class="description">
+                    <h3> Football</h3>
+                    <p>Rs.900.00</p>
+                    <button onclick="addToCart('Football', 900.00)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="vase.png" alt="Vase">
+                    <div class="description">
+                    <h3> Vase</h3>
+                    <p>Rs.2000.00</p>
+                    <button onclick="addToCart('Vase', 2000.00)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="vase.png" alt="Vase">
+                    <div class="description">
+                    <h3> Vase</h3>
+                    <p>Rs.2000.00</p>
+                    <button onclick="addToCart('Vase', 2000.00)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rs.<span id="cart-total">0.00</span></p>
+    </section>
+    
+    <script src="ecomscript.js"></script>
+</body>
+<footer>
+    <p id="clock"></p>
+</footer>
+</html>
